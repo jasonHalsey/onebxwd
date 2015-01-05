@@ -1,0 +1,41 @@
+div{
+	vertical-align:top!important;
+}
+#main{
+	width:100%;
+	clear:both;
+}
+
+.content-stripe{
+	width:100%;
+	height:auto;
+	position:relative;
+	margin: 0;
+	padding: 0;
+	display:block;
+	float:left;
+	img{
+		display:block;
+		margin: 0;
+		padding:0;
+	}
+}
+
+.bgimg{
+	margin:0;
+	padding: 0;
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:auto;
+	z-index:1;
+}
+.stripe-content{
+	position:absolute;
+	z-index:2;
+	width:100%;
+	padding:5%;
+	outline:1px yellow dotted;
+}
