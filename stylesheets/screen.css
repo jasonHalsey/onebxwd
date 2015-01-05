@@ -394,6 +394,17 @@ h1 {
   text-align: center;
 }
 
+/* line 1, ../sass/_partials/_navigation.scss */
+#page_navigation {
+  position: fixed;
+  display: block;
+  z-index: 4;
+}
+/* line 5, ../sass/_partials/_navigation.scss */
+#page_navigation a {
+  color: #fff;
+}
+
 /* line 1, ../sass/_partials/_structure.scss */
 div {
   vertical-align: top !important;
