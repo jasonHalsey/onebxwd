@@ -17,14 +17,19 @@ function contentStripeAdjust() {
 
 $( document ).ready(function() {
 
+	if ($('section.content-stripe:first').hasClass("current")){
+		$('a.prev').hide();
+	}else {
+		$('a.prev').show();
+	}
+
+//Add class of current to content-strip in viewport
 	$('section.content-stripe').inViewport(
 	    function(){$(this).addClass("current");},
 	    function(){$(this).removeClass("current");}
 	);
-	
-	contentStripeAdjust()
 
-	 $('section.content-stripe').first();
+	$('section.content-stripe').first().addClass("current");
 
 	$('a.display').on('click', function(e) {
 	    e.preventDefault();
@@ -55,14 +60,15 @@ $( document ).ready(function() {
 	               $prev.addClass('current');
 	        });
 	  } 
-	});
+	});	
 
-	
-});
+	contentStripeAdjust();
+
+}); //end document.ready();
 
 
 $(window).resize(function() {
 	
-	contentStripeAdjust()
+	contentStripeAdjust();
 
 });
