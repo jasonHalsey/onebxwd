@@ -10,19 +10,55 @@ function contentStripeAdjust() {
 	$(".content-stripe").height(biggestHeight);
 }
 
+function removePrev() {
+	if ($('section.content-stripe:first').hasClass("current")){
+		$('a.prev').addClass("light");
+	}else if ($('section.content-stripe:not(:first)').hasClass("current")){
+		$('a.prev').removeClass("light");
+		alert('no more');
+	}
+}
 
+
+function removeNext() {
+	if ($('section.content-stripe:last').hasClass("current")){
+		$('a.next').addClass("light");
+	}else if ($('section.content-stripe:not(:last)').hasClass("current")){
+		$('a.next').removeClass("light");
+	}
+}
+
+
+
+$( window ).scroll(function() {
+	
+	if ($(this).scrollTop() > 900) {
+    	$('section.content-stripe:first').removeClass("current");
+    }else if($(this).scrollTop() < 5) {
+    	$('section.content-stripe:first').addClass("current")
+    }
+	removePrev();
+	removeNext();
+});
 
 
 
 
 $( document ).ready(function() {
+	removePrev();
+	removeNext();
 
-	if ($('section.content-stripe:first').hasClass("current")){
-		$('a.prev').hide();
-	}else {
-		$('a.prev').show();
-	}
-
+	$('.single-page-nav').singlePageNav({
+       // offset: $('.single-page-nav').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: false,
+        beforeStart: function() {
+            console.log('begin scrolling');
+        },
+        onComplete: function() {
+            console.log('done scrolling');
+        }
+    });
 //Add class of current to content-strip in viewport
 	$('section.content-stripe').inViewport(
 	    function(){$(this).addClass("current");},
@@ -45,7 +81,7 @@ $( document ).ready(function() {
 	      
 	        $('body').animate({
 	          scrollTop: top     
-	        }, function () {
+	        }, {duration: 1500}, function () {
 	               $next.addClass('current');
 	        });
 	  } else if (t === 'prev' && $('.current').prev('section.content-stripe').length > 0) {
@@ -56,7 +92,7 @@ $( document ).ready(function() {
 	      
 	        $('body').animate({
 	          scrollTop: top     
-	        }, function () {
+	        }, {duration: 1500}, function () {
 	               $prev.addClass('current');
 	        });
 	  } 
