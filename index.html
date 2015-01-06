@@ -34,34 +34,46 @@
             </div>
         	<section id="lookbook" class="content-stripe current">
                 <div class="stripe-content"><h1>Look Book</h1>
-                    <p>This is my stripe content. there are manu like it, but this is mine</p>
+                    <p>This is my stripe content. there are many like it, but this is mine</p>
                 </div>
         		<div class="bgimg"><img src="images/1b.jpg" /></div>
         	</section>
             <section id="story" class="content-stripe">
                 <div class="stripe-content"><h1>the onebxwd story</h1>
-                    <p>This is my stripe content. there are manu like it, but this is mine</p>
+                    <p>This is my stripe content. there are many like it, but this is mine</p>
                 </div>
                 <div class="bgimg"><img src="images/6d.jpg" /></div>
             </section>
-            <section id="video" class="content-stripe">
-                <div class="stripe-content"><h1>video</h1>
-                    <p>This is my stripe content. there are manu like it, but this is mine</p>
+            <section id="video" class="video-content-stripe">
+
+                <div class="header-video">
+                    <img src="images/masthead.jpg" class="header-video--media" data-video-src="87701971" data-teaser-source="video/masthead-teaser" data-provider="Vimeo" data-video-width="500" data-video-height="281">
+                    <a href="http://vimeo.com/87701971" class="video-trigger" id="video-trigger">Play video</a>
                 </div>
-                <div class="bgimg"><img src="images/3b.jpg" /></div>
             </section>
             <section id="instagram" class="content-stripe">
                 <div class="stripe-content"><h1>instagram</h1>
-                    <p>This is my stripe content. there are manu like it, but this is mine</p>
+                    <p>This is my stripe content. there are many like it, but this is mine</p>
                 </div>
                 <div class="bgimg"><img src="images/4b.jpg" /></div>
             </section>
         </div>
         <footer></footer>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/inviewport.js"></script>
+        <script src="js/videobg.js"></script>
+        <script>
+            $(document).ready(function() {
+                HeaderVideo.init({
+                  container: $('.header-video'),
+                  header: $('.header-video--media'),
+                  videoTrigger: $("#video-trigger"),
+                  autoPlayVideo: false
+                });    
+            });
+        </script>
         <script src="js/vendor/jquery.singlePageNav.js"></script>
         <script src="js/scripts.js"></script>
 

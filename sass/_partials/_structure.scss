@@ -23,6 +23,10 @@ div{
 	}
 }
 
+.video-content-stripe{
+	@extend .content-stripe;
+}
+
 .bgimg{
 	margin:0;
 	padding: 0;

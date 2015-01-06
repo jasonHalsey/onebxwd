@@ -10,12 +10,23 @@ function contentStripeAdjust() {
 	$(".content-stripe").height(biggestHeight);
 }
 
+// function videoStripeAdjust() {
+//   	$(".video-content-stripe").height(videoHeightCon);
+
+// }
+
+function videoStripeHeight() {
+	var container = $(".video-content-stripe").height();
+	console.log("videocontainer is " + container);
+	
+}
+
+
 function removePrev() {
 	if ($('section.content-stripe:first').hasClass("current")){
 		$('a.prev').addClass("light");
 	}else if ($('section.content-stripe:not(:first)').hasClass("current")){
 		$('a.prev').removeClass("light");
-		alert('no more');
 	}
 }
 
@@ -47,6 +58,7 @@ $( window ).scroll(function() {
 $( document ).ready(function() {
 	removePrev();
 	removeNext();
+	
 
 	$('.single-page-nav').singlePageNav({
        // offset: $('.single-page-nav').outerHeight(),
