@@ -56,7 +56,7 @@ var HeaderVideo = (function ($, document) {
                     .width(winWidth)
                     .height(winHeight);
             }
-            // $(".video-content-stripe").height(settings.container.height());
+           
 
             videoHeightCon = settings.container.height();
 
@@ -75,6 +75,15 @@ var HeaderVideo = (function ($, document) {
             var source = videoDetails.teaser,
                 html = '<video autoplay="true" loop="loop" muted id="teaser-video" class="teaser-video"><source src="'+source+'.mp4" type="video/mp4"><source src="'+source+'.ogv" type="video/ogg"></video>';
             settings.container.append(html);
+            video = settings.container.find('video.teaser-video')
+            if (video.length){
+                video.bind('loadeddata', function(e) {
+                  if (typeof videoStripeHeight === 'function'){
+                    console.log('videoStripeHeight')
+                    $(window).trigger('resize');
+                  }
+                });
+            }
         }
     };
     
@@ -92,9 +101,6 @@ var HeaderVideo = (function ($, document) {
         return html;
     };
 
-    // function videoStripeAdjust() {
-    //     $(".video-content-stripe").height(videoHeightCon);
-    // }
 
     var appendFrame = function() {
         settings.header.hide();

@@ -112,14 +112,20 @@ $( document ).ready(function() {
 	  } 
 	});	
 
-	contentStripeAdjust();
-	videoStripeHeight();
+	HeaderVideo.init({
+      container: $('.header-video'),
+      header: $('.header-video--media'),
+      videoTrigger: $("#video-trigger"),
+      autoPlayVideo: false
+    });  
 
+	contentStripeAdjust();
+	// videoStripeHeight();
+	$(window).trigger('resize');
 }); //end document.ready();
 
 
 $(window).resize(function() {
-	
 	contentStripeAdjust();
 
 });
