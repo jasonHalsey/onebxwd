@@ -2,25 +2,18 @@
 //Set height of content-stripe based on height of img 
 function contentStripeAdjust() {
   var biggestHeight = "0";
-	$(".content-stripe *").each(function(){
+	$(".content-container *").each(function(){
 	 if ($(this).height() > biggestHeight ) {
 	   biggestHeight = $(this).height()
 	 }
 	});
-	$(".content-stripe").height(biggestHeight);
+	$(".content-container").height(biggestHeight);
 }
 
-// function videoStripeAdjust() {
-//   	$(".video-content-stripe").height(videoHeightCon);
-
-// }
 
 function videoStripeHeight() {
-	// var container = $(".video-content-stripe").height();
 	var container = $(".header-video").height();
-	console.log("videocontainer is " + container);
-	$(".video-content-stripe").height(container);
-	
+	$(".video-content-stripe").height(container);	
 }
 
 
@@ -74,12 +67,13 @@ $( document ).ready(function() {
         }
     });
 //Add class of current to content-strip in viewport
-	$('section.content-stripe').inViewport(
-	    function(){$(this).addClass("current");},
-	    function(){$(this).removeClass("current");}
-	);
+	// $('section.content-stripe').inViewport(
+	//     function(){$(this).addClass("current");},
+	//     function(){$(this).removeClass("current");}
+	// );
 
-	$('section.content-stripe').first().addClass("current");
+	// $('section.content-stripe').first().addClass("current");
+	$('section.content-stripe:first').addClass("current");
 
 	$('a.display').on('click', function(e) {
 	    e.preventDefault();
