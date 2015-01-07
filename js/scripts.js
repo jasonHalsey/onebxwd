@@ -16,8 +16,10 @@ function contentStripeAdjust() {
 // }
 
 function videoStripeHeight() {
-	var container = $(".video-content-stripe").height();
+	// var container = $(".video-content-stripe").height();
+	var container = $(".header-video").height();
 	console.log("videocontainer is " + container);
+	$(".video-content-stripe").height(container);
 	
 }
 
@@ -111,6 +113,7 @@ $( document ).ready(function() {
 	});	
 
 	contentStripeAdjust();
+	videoStripeHeight();
 
 }); //end document.ready();
 

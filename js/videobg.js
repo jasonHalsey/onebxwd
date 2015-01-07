@@ -18,7 +18,6 @@ var HeaderVideo = (function ($, document) {
         getVideoDetails();
         setFluidContainer();
         bindClickAction();
-        loadFluidContainer();
         
         if(videoDetails.teaser) {
             appendTeaserVideo();
@@ -62,30 +61,6 @@ var HeaderVideo = (function ($, document) {
             videoHeightCon = settings.container.height();
 
         }).trigger('resize');
-    };
-
-    var loadFluidContainer = function () {
-
-        settings.container.data('aspectRatio', videoDetails.videoHeight / videoDetails.videoWidth);
-
-        $(window).load(function(){
-            var loadwinWidth = $(window).width(),
-                loadwinHeight = $(window).height();
-
-            settings.container
-                .width(loadwinWidth)
-                .height(loadwinWidth * settings.container.data('aspectRatio'));
-
-            if(loadwinHeight < settings.container.height()) {
-                settings.container
-                    .width(loadwinWidth)
-                    .height(loadwinHeight);
-            }
-            // $(".video-content-stripe").height(settings.container.height());
-
-            videoHeightCon2 = settings.container.height();
-            console.log('load script' + videoHeightCon2)
-        }).trigger('peanuts');
     };
 
     var bindClickAction = function() {
