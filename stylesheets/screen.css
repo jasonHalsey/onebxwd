@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -483,6 +483,25 @@ video {
   padding: 2em;
 }
 
+/* line 1, ../sass/_partials/_instafeed.scss */
+.instagram_image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 85, ../sass/neat/grid/_span-columns.scss */
+.instagram_image:last-child {
+  margin-right: 0;
+}
+/* line 3, ../sass/_partials/_instafeed.scss */
+.instagram_image img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  float: left;
+}
+
 /* line 1, ../sass/_partials/_structure.scss */
 div {
   vertical-align: top !important;
@@ -550,4 +569,35 @@ div {
   z-index: 2;
   width: 100%;
   padding: 5%;
+}
+
+/* line 60, ../sass/_partials/_structure.scss */
+#instafeed {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 2.0em;
+}
+/* line 85, ../sass/neat/grid/_span-columns.scss */
+#instafeed:last-child {
+  margin-right: 0;
+}
+
+/* line 65, ../sass/_partials/_structure.scss */
+.instafeed-container {
+  background-image: url(../images/4b.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 2em;
+}
+/* line 15, ../sass/bourbon/addons/_clearfix.scss */
+.instafeed-container:after {
+  content: "";
+  display: table;
+  clear: both;
 }

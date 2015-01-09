@@ -62,21 +62,25 @@
                     <a href="http://vimeo.com/87701971" class="video-trigger" id="video-trigger">Play video</a>
                 </div>
             </section>
-            <section id="instagram" class="content-stripe content-container">
-                <div class="stripe-content"><h1>instagram</h1>
+            <section id="instagram" class="content-stripe instafeed-container">
+                <div class="story-content"><h1>instagram</h1>
                     <script type="text/javascript">
-                        var feed = new Instafeed({
-                            get: 'popular',
-                            tagName: 'awesome',
-                            clientId: 'b9888bd34df24f36a40fa65b876c72c9',
-                            template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+                    
+                        var userFeed = new Instafeed({
+                            get: 'user',
+                            userId: 1517312917,
+                            accessToken: '1517312917.78d68d2.4bafa9ebfcf74d7b8d46d3ab9c417515',
+                            template: '<a class="instagram_image" href="{{link}}"><img src="{{image}}" /></a>'
                         });
-                        feed.run();
+                        userFeed.run();
+
                     </script>
+
+                    
 
                     <div id="instafeed"></div>
                 </div>
-                <div class="bgimg"><img src="images/4b.jpg" /></div>
+                
             </section>
         </div>
         <footer></footer>

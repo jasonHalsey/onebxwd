@@ -57,4 +57,19 @@ div{
 	padding:5%;
 }
 
+#instafeed{
+	@include span-columns(12);
+	margin-top:2.0em;
+}
 
+.instafeed-container{
+	background-image:url(../images/4b.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 2em;
+	@include clearfix;
+}
