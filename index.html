@@ -10,6 +10,8 @@
         <meta name="description" content="One Bxwd">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link rel="stylesheet" href="stylesheets/screen.css">
+
+        <script src="js/instafeed.min.js"></script>
         <script src="js/vendor/modernizr-2.7.1.min.js"></script> 
     </head>
     <body class="loading">
@@ -62,7 +64,17 @@
             </section>
             <section id="instagram" class="content-stripe content-container">
                 <div class="stripe-content"><h1>instagram</h1>
-                    <p>This is my stripe content. there are many like it, but this is mine</p>
+                    <script type="text/javascript">
+                        var feed = new Instafeed({
+                            get: 'popular',
+                            tagName: 'awesome',
+                            clientId: 'b9888bd34df24f36a40fa65b876c72c9',
+                            template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+                        });
+                        feed.run();
+                    </script>
+
+                    <div id="instafeed"></div>
                 </div>
                 <div class="bgimg"><img src="images/4b.jpg" /></div>
             </section>
