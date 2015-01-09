@@ -23,6 +23,18 @@ div{
 	}
 }
 
+.story-container{
+	background-image:url(../images/6d.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 2em;
+	@include clearfix;
+}
+
 .video-content-stripe{
 	@extend .content-stripe;
 }

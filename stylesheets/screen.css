@@ -513,7 +513,25 @@ div {
   height: auto;
 }
 
-/* line 30, ../sass/_partials/_structure.scss */
+/* line 26, ../sass/_partials/_structure.scss */
+.story-container {
+  background-image: url(../images/6d.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 2em;
+}
+/* line 15, ../sass/bourbon/addons/_clearfix.scss */
+.story-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 42, ../sass/_partials/_structure.scss */
 .bgimg {
   margin: 0;
   padding: 0;
@@ -526,7 +544,7 @@ div {
   z-index: 1;
 }
 
-/* line 41, ../sass/_partials/_structure.scss */
+/* line 53, ../sass/_partials/_structure.scss */
 .stripe-content {
   position: absolute;
   z-index: 2;
