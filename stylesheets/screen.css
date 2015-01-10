@@ -646,7 +646,7 @@ h1 {
 /* line 129, ../sass/_partials/_navigation.scss */
 .centered-navigation ul li.nav-link a:hover {
   color: #333;
-  border: 1px solid green;
+  border: 1px solid blue;
 }
 @media screen and (min-width: 53.75em) {
   /* line 114, ../sass/_partials/_navigation.scss */
