@@ -67,10 +67,10 @@ $( document ).ready(function() {
         }
     });
 //Add class of current to content-strip in viewport
-	// $('section.content-stripe').inViewport(
-	//     function(){$(this).addClass("current");},
-	//     function(){$(this).removeClass("current");}
-	// );
+	$('section.content-stripe').inViewport(
+	    function(){$(this).addClass("current");},
+	    function(){$(this).removeClass("current");}
+	);
 
 	// $('section.content-stripe').first().addClass("current");
 	$('section.content-stripe:first').addClass("current");
