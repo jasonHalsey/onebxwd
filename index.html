@@ -18,21 +18,34 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <nav class="single-page-nav">
-                <ul>
-                    <li><a href="#lookbook">look book</a></li>
-                    <li><a href="#story">story</a></li>
-                    <li><a href="#video">video</a></li>
-                    <li><a href="#instagram">instagram</a></li>
-                    <li><a class="external" href="contact_us.html">contact</a></li>
-                </ul>
+        <header class="centered-navigation" role="banner">
+          <div class="centered-navigation-wrapper">
+            <a href="javascript:void(0)" class="mobile-logo">
+              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
+            </a>
+            <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+            <nav role="navigation" class="single-page-nav">
+              <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+                <li class="nav-link"><a href="#lookbook">look book</a></li>
+                <li class="nav-link"><a class="external" href="coming_soon.html">store</a></li>
+                <li class="nav-link"><a href="#story">story</a></li>
+                <li class="nav-link logo">
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
+                  </a>
+                </li>
+                <li class="nav-link"><a href="#video">video</a></li>
+                <li class="nav-link"><a href="#instagram">instagram</a></li>
+                <li class="nav-link"><a class="external" href="contact_us.html">contact</a></li>
+              </ul>
             </nav>
+          </div>
         </header>
+
         <div id="main">
             <div id="page_navigation">
                 <a href="#" class="display prev">prev</a>
-                 <a href="#" class="display next">next</a>
+                <a href="#" class="display next">next</a>
             </div>
         	<section id="lookbook" class="content-stripe content-container">
                 <div class="stripe-content"><h1>Look Book</h1>
@@ -47,6 +60,7 @@
                     <p>Grapple gibbet piracy yo-ho-ho case shot jolly boat stern avast boom long clothes. Bounty maroon fire ship bilge rat lookout Jack Ketch bilged on her anchor coxswain pillage port. Hornswaggle capstan chandler Admiral of the Black snow pirate tack Brethren of the Coast weigh anchor pinnace. </p>
 
                     <p>Furl Jack Tar prow tender tackle starboard keelhaul transom black spot landlubber or just lubber. Yo-ho-ho fathom driver aye log dead men tell no tales trysail broadside chantey blow the man down. Coffer transom rum tack Corsair parrel killick heave down grog blossom grapple. </p>
+
                     <p>Tender scuttle loaded to the gunwalls grapple ye maroon prow splice the main brace gun measured fer yer chains. Chase guns plunder chase shrouds rope's end lugger quarter topsail coxswain Sail ho. Brigantine rigging rope's end black jack swing the lead weigh anchor jolly boat spanker interloper hogshead. </p>
 
                     <p>Grapple gibbet piracy yo-ho-ho case shot jolly boat stern avast boom long clothes. Bounty maroon fire ship bilge rat lookout Jack Ketch bilged on her anchor coxswain pillage port. Hornswaggle capstan chandler Admiral of the Black snow pirate tack Brethren of the Coast weigh anchor pinnace. </p>
@@ -82,8 +96,39 @@
                 </div>
                 
             </section>
-        </div>
-        <footer></footer>
+
+
+
+        </div><!-- end main -->
+
+       <footer class="footer" role="contentinfo">
+          <div class="footer-logo">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><h3>Content</h3></li>
+              <li><a href="javascript:void(0)">Return To Top</a></li>
+              <li><a href="javascript:void(0)">Contact</a></li>
+              <li><a href="javascript:void(0)">Store</a></li>
+            </ul>
+            <ul>
+              <li><h3>Follow Us</h3></li>
+              <li><a href="javascript:void(0)">Instagram</a></li>
+              <li><a href="javascript:void(0)">Twitter</a></li>
+            </ul>
+            <ul>
+              <li><h3>Legal</h3></li>
+              <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+              <li><a href="javascript:void(0)">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <hr>
+
+          <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+        </footer>
+
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

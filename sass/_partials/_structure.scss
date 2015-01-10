@@ -3,7 +3,7 @@ div{
 }
 #main{
 	width:100%;
-	clear:both;
+	@include clearfix;
 }
 
 .content-stripe{
