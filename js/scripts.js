@@ -53,17 +53,27 @@ $( window ).scroll(function() {
 $( document ).ready(function() {
 	// removePrev();
 	// removeNext();
-	
+
+
+	//look book slider init
+	$('.lookbook').bxSlider({
+	  auto: true,
+	  autoControls: false,
+	  mode: 'fade'
+	});
+
 
 	$('.single-page-nav').singlePageNav({
        // offset: $('.single-page-nav').outerHeight(),
+       offset: 68,
+
         filter: ':not(.external)',
         updateHash: false,
         beforeStart: function() {
-            console.log('begin scrolling');
+            // console.log('begin scrolling');
         },
         onComplete: function() {
-            console.log('done scrolling');
+            // console.log('done scrolling');
         }
     });
 //Add class of current to content-strip in viewport
@@ -122,6 +132,23 @@ $( document ).ready(function() {
 $(window).resize(function() {
 	contentStripeAdjust();
 
+});
+
+//sticky navigation
+$(window).scroll(function() {
+		
+	if (Modernizr.mq('only screen and (min-width: 1200px)')) {
+	    
+	    if ($(this).scrollTop() > 1)  {  
+        $('header').addClass("sticky");
+        $('#main').addClass("sticky");
+        console.log('Its\'s sticky');
+	    }
+	    else{
+	        $('header').removeClass("sticky");
+	        $('#main').removeClass("sticky");
+	    }
+	}
 });
 
 //navigation functionality

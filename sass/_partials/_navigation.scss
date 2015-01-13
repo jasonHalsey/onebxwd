@@ -7,6 +7,26 @@
 	}
 }
 
+
+ header{
+    position: fixed;
+    width: 100%;
+    line-height: 108px;
+    height: 108px;
+    background: #335C7D;
+    
+    
+    // set animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+header.sticky {
+    line-height: 68px;
+    height: 68px; 
+    background: rgba(0, 0, 0, 0.8);
+}
+
 .centered-navigation {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
@@ -18,11 +38,11 @@
   //////////////////////////////////////////////////////////////////////////////////
 
   $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 2em;
+  $centered-navigation-logo-height: 3.75em;
   $centered-navigation-background: #000;
   $centered-navigation-color: #fff;
   $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
+  $centered-navigation-height: 30px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
@@ -87,7 +107,7 @@
     -webkit-transform-style: preserve-3d; // stop webkit flicker
     clear: both;
     display: none;
-    margin: 0 auto;
+    margin: auto;
     overflow: visible;
     padding: 0;
     width: 100%;
@@ -117,7 +137,7 @@
     line-height: $centered-navigation-height;
     overflow: hidden;
     padding-right: $centered-navigation-submenu-padding;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 9999;
 
@@ -125,10 +145,14 @@
       color: $centered-navigation-color;
       display: inline-block;
       text-decoration: none;
+      border:1px solid transparent;
+      margin: 1.0em 0;
+      font-size: 0.8em;
+      text-transform: uppercase;
 
       &:hover {
         color: $centered-navigation-color-hover;
-        border:1px solid blue;
+        border:1px solid $centered-navigation-color-hover;
       }
     }
 
@@ -138,7 +162,7 @@
       line-height: $centered-navigation-height;
 
       a {
-        padding-right: $centered-navigation-item-padding;
+        padding: 0 $centered-navigation-item-padding;
       }
     }
   }
@@ -146,6 +170,11 @@
   li.logo.nav-link {
     display: none;
     line-height: 0;
+    a{
+      &:hover{
+        border: 1px solid transparent;
+      }
+    }
 
     @include media($large-screen) {
       display: inline;

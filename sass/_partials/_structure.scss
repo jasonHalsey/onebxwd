@@ -1,9 +1,16 @@
+body{
+	background-color:#000;
+}
 div{
 	vertical-align:top!important;
 }
 #main{
 	width:100%;
+	padding-top:108px;
 	@include clearfix;
+}
+#main.sticky{
+	padding-top:68px;
 }
 
 .content-stripe{
@@ -57,9 +64,26 @@ div{
 	padding:5%;
 }
 
+.story-content{
+	color:#fff;
+	padding:0 0 5%;
+	background-color:rgba(0, 0, 0, 0.7);
+	p{
+		padding: 0% 5%;
+	}
+	h1{
+		margin-bottom: 2%;
+	}
+}
+
 #instafeed{
 	@include span-columns(12);
 	margin-top:2.0em;
+	@include clearfix;
+}
+
+.insta-content{
+	
 }
 
 .instafeed-container{
