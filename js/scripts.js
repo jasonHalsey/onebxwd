@@ -144,11 +144,13 @@ $(window).scroll(function() {
 	    if ($(this).scrollTop() > 1)  {  
         $('header').addClass("sticky");
         $('#main').addClass("sticky");
+        $('li.nav-link > a').addClass("sticky");
         console.log('Its\'s sticky');
 	    }
 	    else{
 	        $('header').removeClass("sticky");
 	        $('#main').removeClass("sticky");
+	        $('li.nav-link > a').removeClass("sticky");
 	    }
 	}
 });

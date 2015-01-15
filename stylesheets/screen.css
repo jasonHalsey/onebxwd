@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Users/jasonhalsey/.rvm/gems/ruby-1.9.3-p484/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Users/jason/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -551,14 +551,14 @@ header {
   transition: all 0.4s ease;
 }
 
-/* line 24, ../sass/_partials/_navigation.scss */
+/* line 22, ../sass/_partials/_navigation.scss */
 header.sticky {
   line-height: 68px;
   height: 68px;
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 30, ../sass/_partials/_navigation.scss */
+/* line 29, ../sass/_partials/_navigation.scss */
 .centered-navigation {
   -webkit-font-smoothing: antialiased;
   background-color: #000;
@@ -567,26 +567,26 @@ header.sticky {
   width: 100%;
   z-index: 9999;
 }
-/* line 60, ../sass/_partials/_navigation.scss */
+/* line 59, ../sass/_partials/_navigation.scss */
 .centered-navigation .mobile-logo {
   display: inline;
   float: left;
   max-height: 30px;
   padding-left: 1em;
 }
-/* line 66, ../sass/_partials/_navigation.scss */
+/* line 65, ../sass/_partials/_navigation.scss */
 .centered-navigation .mobile-logo img {
   max-height: 30px;
   opacity: .6;
   padding: .8em 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 60, ../sass/_partials/_navigation.scss */
+  /* line 59, ../sass/_partials/_navigation.scss */
   .centered-navigation .mobile-logo {
     display: none;
   }
 }
-/* line 77, ../sass/_partials/_navigation.scss */
+/* line 76, ../sass/_partials/_navigation.scss */
 .centered-navigation .centered-navigation-mobile-menu {
   color: #fff;
   display: block;
@@ -599,16 +599,16 @@ header.sticky {
   text-transform: uppercase;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 77, ../sass/_partials/_navigation.scss */
+  /* line 76, ../sass/_partials/_navigation.scss */
   .centered-navigation .centered-navigation-mobile-menu {
     display: none;
   }
 }
-/* line 92, ../sass/_partials/_navigation.scss */
+/* line 91, ../sass/_partials/_navigation.scss */
 .centered-navigation .centered-navigation-mobile-menu:hover {
   color: #333;
 }
-/* line 99, ../sass/_partials/_navigation.scss */
+/* line 98, ../sass/_partials/_navigation.scss */
 .centered-navigation .centered-navigation-wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -628,7 +628,7 @@ header.sticky {
   display: table;
   clear: both;
 }
-/* line 106, ../sass/_partials/_navigation.scss */
+/* line 105, ../sass/_partials/_navigation.scss */
 .centered-navigation ul.centered-navigation-menu {
   -webkit-transform-style: preserve-3d;
   clear: both;
@@ -639,24 +639,24 @@ header.sticky {
   width: 100%;
   z-index: 99999;
 }
-/* line 116, ../sass/_partials/_navigation.scss */
+/* line 115, ../sass/_partials/_navigation.scss */
 .centered-navigation ul.centered-navigation-menu.show {
   display: block;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 106, ../sass/_partials/_navigation.scss */
+  /* line 105, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.centered-navigation-menu {
     display: block;
     text-align: center;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 128, ../sass/_partials/_navigation.scss */
+  /* line 127, ../sass/_partials/_navigation.scss */
   .centered-navigation .nav-link:first-child {
     margin-left: 2.2em;
   }
 }
-/* line 134, ../sass/_partials/_navigation.scss */
+/* line 133, ../sass/_partials/_navigation.scss */
 .centered-navigation ul li.nav-link {
   background: #000;
   display: block;
@@ -667,7 +667,7 @@ header.sticky {
   width: 100%;
   z-index: 9999;
 }
-/* line 144, ../sass/_partials/_navigation.scss */
+/* line 143, ../sass/_partials/_navigation.scss */
 .centered-navigation ul li.nav-link a {
   color: #fff;
   display: inline-block;
@@ -676,68 +676,75 @@ header.sticky {
   margin: 1.0em 0;
   font-size: 0.8em;
   text-transform: uppercase;
+  vertical-align: baseline;
 }
-/* line 153, ../sass/_partials/_navigation.scss */
+/* line 154, ../sass/_partials/_navigation.scss */
 .centered-navigation ul li.nav-link a:hover {
   color: #333;
   border: 1px solid #333;
 }
+/* line 159, ../sass/_partials/_navigation.scss */
+.centered-navigation ul li.nav-link a.sticky {
+  vertical-align: top;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
 @media screen and (min-width: 53.75em) {
-  /* line 134, ../sass/_partials/_navigation.scss */
+  /* line 133, ../sass/_partials/_navigation.scss */
   .centered-navigation ul li.nav-link {
     background: transparent;
     display: inline;
     line-height: 30px;
   }
-  /* line 164, ../sass/_partials/_navigation.scss */
+  /* line 171, ../sass/_partials/_navigation.scss */
   .centered-navigation ul li.nav-link a {
     padding: 0 1em;
   }
 }
-/* line 170, ../sass/_partials/_navigation.scss */
+/* line 177, ../sass/_partials/_navigation.scss */
 .centered-navigation li.logo.nav-link {
   display: none;
   line-height: 0;
 }
-/* line 174, ../sass/_partials/_navigation.scss */
+/* line 181, ../sass/_partials/_navigation.scss */
 .centered-navigation li.logo.nav-link a:hover {
   border: 1px solid transparent;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 170, ../sass/_partials/_navigation.scss */
+  /* line 177, ../sass/_partials/_navigation.scss */
   .centered-navigation li.logo.nav-link {
     display: inline;
   }
 }
-/* line 184, ../sass/_partials/_navigation.scss */
+/* line 191, ../sass/_partials/_navigation.scss */
 .centered-navigation .logo img {
   margin-bottom: -1.25em;
   max-height: 3.75em;
   opacity: .6;
 }
-/* line 192, ../sass/_partials/_navigation.scss */
+/* line 199, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more.nav-link {
   padding-right: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 192, ../sass/_partials/_navigation.scss */
+  /* line 199, ../sass/_partials/_navigation.scss */
   .centered-navigation li.more.nav-link {
     padding-right: 1em;
   }
 }
-/* line 199, ../sass/_partials/_navigation.scss */
+/* line 206, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more.nav-link > ul > li:first-child a {
   padding-top: 1em;
 }
-/* line 203, ../sass/_partials/_navigation.scss */
+/* line 210, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more.nav-link a {
   margin-right: 1em;
 }
-/* line 207, ../sass/_partials/_navigation.scss */
+/* line 214, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more.nav-link > a {
   padding-right: 0.6em;
 }
-/* line 211, ../sass/_partials/_navigation.scss */
+/* line 218, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more.nav-link > a:after {
   position: absolute;
   top: auto;
@@ -747,51 +754,51 @@ header.sticky {
   color: #fff;
   content: '\25BE';
 }
-/* line 218, ../sass/_partials/_navigation.scss */
+/* line 225, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more {
   overflow: visible;
   padding-right: 0;
 }
-/* line 222, ../sass/_partials/_navigation.scss */
+/* line 229, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more a {
   padding-right: 1em;
 }
-/* line 226, ../sass/_partials/_navigation.scss */
+/* line 233, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more > a {
   padding-right: 1.6em;
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 226, ../sass/_partials/_navigation.scss */
+  /* line 233, ../sass/_partials/_navigation.scss */
   .centered-navigation li.more > a {
     margin-right: 1em;
   }
 }
-/* line 234, ../sass/_partials/_navigation.scss */
+/* line 241, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more > a:after {
   content: '›';
   font-size: 1.2em;
   position: absolute;
   right: 0.5em;
 }
-/* line 242, ../sass/_partials/_navigation.scss */
+/* line 249, ../sass/_partials/_navigation.scss */
 .centered-navigation li.more:hover > .submenu {
   display: block;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 218, ../sass/_partials/_navigation.scss */
+  /* line 225, ../sass/_partials/_navigation.scss */
   .centered-navigation li.more {
     padding-right: 1em;
     position: relative;
   }
 }
-/* line 252, ../sass/_partials/_navigation.scss */
+/* line 259, ../sass/_partials/_navigation.scss */
 .centered-navigation ul.submenu {
   display: none;
   padding-left: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 252, ../sass/_partials/_navigation.scss */
+  /* line 259, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.submenu {
     left: -1em;
     position: absolute;
@@ -799,35 +806,35 @@ header.sticky {
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 262, ../sass/_partials/_navigation.scss */
+  /* line 269, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.submenu .submenu {
     left: 11.8em;
     top: 0;
   }
 }
-/* line 269, ../sass/_partials/_navigation.scss */
+/* line 276, ../sass/_partials/_navigation.scss */
 .centered-navigation ul.submenu li {
   display: block;
   padding-right: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 269, ../sass/_partials/_navigation.scss */
+  /* line 276, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.submenu li {
     line-height: 23.07692px;
   }
-  /* line 276, ../sass/_partials/_navigation.scss */
+  /* line 283, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.submenu li:first-child > a {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  /* line 281, ../sass/_partials/_navigation.scss */
+  /* line 288, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.submenu li:last-child > a {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     padding-bottom: .7em;
   }
 }
-/* line 288, ../sass/_partials/_navigation.scss */
+/* line 295, ../sass/_partials/_navigation.scss */
 .centered-navigation ul.submenu li a {
   background-color: black;
   display: inline-block;
@@ -836,7 +843,7 @@ header.sticky {
   width: 100%;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 288, ../sass/_partials/_navigation.scss */
+  /* line 295, ../sass/_partials/_navigation.scss */
   .centered-navigation ul.submenu li a {
     background-color: #000;
     padding-left: 1em;

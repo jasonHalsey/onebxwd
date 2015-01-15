@@ -8,17 +8,15 @@
 }
 
 
- header{
-    position: fixed;
-    width: 100%;
-    line-height: 108px;
-    height: 108px;
-    background: #335C7D;
-    
-    
-    // set animation
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+header{
+  position: fixed;
+  width: 100%;
+  line-height: 108px;
+  height: 108px;
+  background: #335C7D;
+  // set animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 header.sticky {
@@ -26,6 +24,7 @@ header.sticky {
     height: 68px; 
     background: rgba(0, 0, 0, 0.8);
 }
+
 
 .centered-navigation {
   ///////////////////////////////////////////////////////////////////////////////////
@@ -149,11 +148,19 @@ header.sticky {
       margin: 1.0em 0;
       font-size: 0.8em;
       text-transform: uppercase;
+      vertical-align: baseline;
+       
 
       &:hover {
         color: $centered-navigation-color-hover;
         border:1px solid $centered-navigation-color-hover;
       }
+    }
+    a.sticky{
+      vertical-align: top;
+      // set animation
+      -webkit-transition: all 0.8s ease;
+      transition: all 0.8s ease;
     }
 
     @include media($horizontal-bar-mode) {
