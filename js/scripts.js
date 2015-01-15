@@ -38,7 +38,7 @@ function removeNext() {
 
 $( window ).scroll(function() {
 	
-	if ($(this).scrollTop() > 900) {
+	if ($(this).scrollTop() > 400) {
     	$('section.content-stripe:first').removeClass("current");
     }else if($(this).scrollTop() < 5) {
     	$('section.content-stripe:first').addClass("current")
@@ -64,8 +64,10 @@ $( document ).ready(function() {
 
 
 	$('.single-page-nav').singlePageNav({
-       // offset: $('.single-page-nav').outerHeight(),
-       offset: 68,
+       
+
+       offset: $('.single-page-nav').outerHeight(),
+       
 
         filter: ':not(.external)',
         updateHash: false,
