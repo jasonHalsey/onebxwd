@@ -1,11 +1,34 @@
 #page_navigation{
 	position:fixed;
 	display:block;
-	z-index:4;
+  top:25%;
+	right:20px;
+  z-index:4;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding:1.0em 0.25em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width:2.0em;
 	a{
-		color:#fff;
+		color:transparent;
+    font-size: 0;
+    display:block;
+    img{
+      width:100%;
+      height: auto;
+    }
+    &:hover{
+      opacity: 0.5;
+    }
 	}
+  a.prev{
+    margin-bottom: 20px;
+  }
+  a.next{
+  }
 }
+
 
 
 header{
