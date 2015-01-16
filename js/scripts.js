@@ -43,17 +43,12 @@ $( window ).scroll(function() {
     }else if($(this).scrollTop() < 5) {
     	$('section.content-stripe:first').addClass("current")
     }
-	// removePrev();
-	// removeNext();
 });
 
 
 
 
 $( document ).ready(function() {
-	// removePrev();
-	// removeNext();
-
 
 	//look book slider init
 	$('.lookbook').bxSlider({
@@ -78,7 +73,8 @@ $( document ).ready(function() {
             // console.log('done scrolling');
         }
     });
-//Add class of current to content-strip in viewport
+
+	//Add class of current to content-strip in viewport
 	$('section.content-stripe').inViewport(
 	    function(){$(this).addClass("current");},
 	    function(){$(this).removeClass("current");}
@@ -133,7 +129,6 @@ $( document ).ready(function() {
 
 $(window).resize(function() {
 	contentStripeAdjust();
-
 });
 
 //sticky navigation
