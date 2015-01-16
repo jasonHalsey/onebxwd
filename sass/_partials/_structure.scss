@@ -92,6 +92,15 @@ div{
 	}
 }
 
+.store-container{
+	text-align:center;
+	img{
+		margin: 0 auto;
+		width:75%;
+		height:auto;
+	}
+}
+
 #instafeed{
 	@include span-columns(12);
 	margin-top:0;

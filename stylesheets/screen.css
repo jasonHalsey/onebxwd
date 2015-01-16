@@ -1360,6 +1360,7 @@ video {
 .contact-banner img {
   width: 100%;
   height: auto;
+  margin-bottom: -10px;
 }
 
 /* Outline Outward */
@@ -1537,6 +1538,17 @@ div {
 }
 
 /* line 95, ../sass/_partials/_structure.scss */
+.store-container {
+  text-align: center;
+}
+/* line 97, ../sass/_partials/_structure.scss */
+.store-container img {
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+}
+
+/* line 104, ../sass/_partials/_structure.scss */
 #instafeed {
   float: left;
   display: block;
@@ -1555,7 +1567,7 @@ div {
   clear: both;
 }
 
-/* line 105, ../sass/_partials/_structure.scss */
+/* line 114, ../sass/_partials/_structure.scss */
 .instafeed-container {
   background-color: #fff;
   padding: 0;
@@ -1567,13 +1579,13 @@ div {
   clear: both;
 }
 
-/* line 111, ../sass/_partials/_structure.scss */
+/* line 120, ../sass/_partials/_structure.scss */
 img#blvd_logo {
   opacity: 0.5;
   width: 30%;
   height: auto;
 }
-/* line 115, ../sass/_partials/_structure.scss */
+/* line 124, ../sass/_partials/_structure.scss */
 img#blvd_logo:hover {
   opacity: 1.0;
 }
