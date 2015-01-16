@@ -1182,6 +1182,241 @@ video {
   padding: 10px;
 }
 
+/* line 7, ../sass/_partials/_contact.scss */
+.contact-mod {
+  width: 100%;
+  position: relative;
+}
+/* line 15, ../sass/bourbon/addons/_clearfix.scss */
+.contact-mod:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 11, ../sass/_partials/_contact.scss */
+.contact-mod .contact_path {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  text-align: center;
+  padding-top: 2.5%;
+}
+/* line 85, ../sass/neat/grid/_span-columns.scss */
+.contact-mod .contact_path:last-child {
+  margin-right: 0;
+}
+/* line 15, ../sass/_partials/_contact.scss */
+.contact-mod .contact_path .icon_contact {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #bababa;
+  margin: 2% auto 4%;
+}
+/* line 27, ../sass/_partials/_contact.scss */
+.contact-mod .contact_path .icon_contact span.sales_icon img {
+  padding-top: 23%;
+}
+/* line 30, ../sass/_partials/_contact.scss */
+.contact-mod .contact_path .icon_contact span.pr_icon img {
+  padding-top: 20%;
+}
+/* line 33, ../sass/_partials/_contact.scss */
+.contact-mod .contact_path .icon_contact span.phone_icon img {
+  padding-top: 25%;
+}
+/* line 36, ../sass/_partials/_contact.scss */
+.contact-mod .contact_path .icon_contact span.email_icon img {
+  padding-top: 35%;
+}
+@media all and (max-width: 1000px) {
+  /* line 11, ../sass/_partials/_contact.scss */
+  .contact-mod .contact_path {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 85, ../sass/neat/grid/_span-columns.scss */
+  .contact-mod .contact_path:last-child {
+    margin-right: 0;
+  }
+  /* line 42, ../sass/_partials/_contact.scss */
+  .contact-mod .contact_path .icon_contact {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #bababa;
+    margin: 2% auto 4%;
+  }
+  /* line 54, ../sass/_partials/_contact.scss */
+  .contact-mod .contact_path .icon_contact span.sales_icon img {
+    width: 50%;
+    height: auto;
+    padding-top: 23%;
+  }
+  /* line 61, ../sass/_partials/_contact.scss */
+  .contact-mod .contact_path .icon_contact span.pr_icon img {
+    width: 50%;
+    height: auto;
+    padding-top: 20%;
+  }
+  /* line 67, ../sass/_partials/_contact.scss */
+  .contact-mod .contact_path .icon_contact span.phone_icon img {
+    width: 50%;
+    height: auto;
+    padding-top: 25%;
+  }
+  /* line 73, ../sass/_partials/_contact.scss */
+  .contact-mod .contact_path .icon_contact span.email_icon img {
+    width: 50%;
+    height: auto;
+    padding-top: 35%;
+  }
+}
+/* line 81, ../sass/_partials/_contact.scss */
+.contact-mod .center_path {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-align: center;
+  position: relative;
+}
+/* line 85, ../sass/neat/grid/_span-columns.scss */
+.contact-mod .center_path:last-child {
+  margin-right: 0;
+}
+/* line 85, ../sass/_partials/_contact.scss */
+.contact-mod .center_path .icon_contact {
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  line-height: 180px;
+  text-align: center;
+  background: #bababa;
+  margin: 2% auto 4%;
+}
+/* line 97, ../sass/_partials/_contact.scss */
+.contact-mod .center_path .icon_contact span.blvd_icon img {
+  padding-top: 18%;
+}
+@media all and (max-width: 1000px) {
+  /* line 81, ../sass/_partials/_contact.scss */
+  .contact-mod .center_path {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 85, ../sass/neat/grid/_span-columns.scss */
+  .contact-mod .center_path:last-child {
+    margin-right: 0;
+  }
+  /* line 103, ../sass/_partials/_contact.scss */
+  .contact-mod .center_path .icon_contact {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #bababa;
+    margin: 2% auto 4%;
+  }
+  /* line 114, ../sass/_partials/_contact.scss */
+  .contact-mod .center_path .icon_contact span.blvd_icon img {
+    padding-top: 20%;
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* line 124, ../sass/_partials/_contact.scss */
+.contact-row {
+  padding-bottom: 2.5%;
+  padding-top: 2.0%;
+  background-color: #fff;
+}
+
+/* line 130, ../sass/_partials/_contact.scss */
+.contact-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Outline Outward */
+/* line 136, ../sass/_partials/_contact.scss */
+.outline-outward {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+/* line 11, ../sass/_partials/effects/_outline-outward.scss */
+.outline-outward:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+/* line 24, ../sass/_partials/effects/_outline-outward.scss */
+.outline-outward:hover:before, .outline-outward:focus:before, .outline-outward:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  border-radius: 50%;
+}
+
+/* line 102, ../sass/_partials/_textures.scss */
+.texture {
+  height: 5em;
+  width: 100%;
+}
+/* line 108, ../sass/_partials/_textures.scss */
+.texture .texture-normal {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/grey.png"), -webkit-linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/grey.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  float: left;
+  height: 5em;
+  width: 50%;
+}
+/* line 116, ../sass/_partials/_textures.scss */
+.texture .texture-inverted {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/grey.png"), -webkit-linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/grey.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  float: left;
+  height: 5em;
+  width: 50%;
+}
+
 /* line 1, ../sass/_partials/_structure.scss */
 body {
   background-color: #000;
@@ -1230,13 +1465,7 @@ div {
 
 /* line 33, ../sass/_partials/_structure.scss */
 .story-container {
-  background-image: url(../images/6d.jpg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #fff;
   padding: 2em;
 }
 /* line 15, ../sass/bourbon/addons/_clearfix.scss */
@@ -1246,7 +1475,7 @@ div {
   clear: both;
 }
 
-/* line 49, ../sass/_partials/_structure.scss */
+/* line 43, ../sass/_partials/_structure.scss */
 .bgimg {
   margin: 0;
   padding: 0;
@@ -1259,7 +1488,7 @@ div {
   z-index: 1;
 }
 
-/* line 60, ../sass/_partials/_structure.scss */
+/* line 54, ../sass/_partials/_structure.scss */
 .stripe-content {
   position: absolute;
   z-index: 2;
@@ -1267,28 +1496,53 @@ div {
   padding: 5%;
 }
 
-/* line 67, ../sass/_partials/_structure.scss */
+/* line 61, ../sass/_partials/_structure.scss */
 .story-content {
-  color: #fff;
-  padding: 0 0 5%;
-  background-color: rgba(0, 0, 0, 0.7);
+  color: #333;
+  padding: 1.5% 0 5%;
 }
-/* line 71, ../sass/_partials/_structure.scss */
+/* line 64, ../sass/_partials/_structure.scss */
 .story-content p {
   padding: 0% 5%;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 3.0em;
 }
-/* line 74, ../sass/_partials/_structure.scss */
+/* line 70, ../sass/_partials/_structure.scss */
 .story-content h1 {
-  margin-bottom: 2%;
+  color: #333;
+  margin: 2% 0;
+  text-align: center;
+  font-size: 2.5em;
 }
 
-/* line 79, ../sass/_partials/_structure.scss */
+/* line 78, ../sass/_partials/_structure.scss */
+.terms-content {
+  color: #333;
+  padding: 1.5% 0 5%;
+}
+/* line 81, ../sass/_partials/_structure.scss */
+.terms-content p {
+  padding: 0% 5%;
+  font-size: 0.95em;
+  text-align: left;
+  line-height: 1.5em;
+}
+/* line 87, ../sass/_partials/_structure.scss */
+.terms-content h1 {
+  color: #333;
+  margin: 2% 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* line 95, ../sass/_partials/_structure.scss */
 #instafeed {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-top: 2.0em;
+  margin-top: 0;
 }
 /* line 85, ../sass/neat/grid/_span-columns.scss */
 #instafeed:last-child {
@@ -1301,20 +1555,25 @@ div {
   clear: both;
 }
 
-/* line 89, ../sass/_partials/_structure.scss */
+/* line 105, ../sass/_partials/_structure.scss */
 .instafeed-container {
-  background-image: url(../images/4b.jpg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 6em 2em;
+  background-color: #fff;
+  padding: 0;
 }
 /* line 15, ../sass/bourbon/addons/_clearfix.scss */
 .instafeed-container:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 111, ../sass/_partials/_structure.scss */
+img#blvd_logo {
+  opacity: 0.5;
+  width: 30%;
+  height: auto;
+}
+/* line 115, ../sass/_partials/_structure.scss */
+img#blvd_logo:hover {
+  opacity: 1.0;
 }
