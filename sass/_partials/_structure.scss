@@ -36,6 +36,12 @@ div{
 	@include clearfix;
 }
 
+.privacy-container{
+	background-color:#fff;
+	padding: 4.0em;
+	@include clearfix;
+}
+
 .video-content-stripe{
 	@extend .content-stripe;
 }
@@ -95,8 +101,8 @@ div{
 .store-container{
 	text-align:center;
 	img{
-		margin: 0 auto;
-		width:75%;
+		margin: 4% auto 0;
+		width:50%;
 		height:auto;
 	}
 }
@@ -112,7 +118,6 @@ div{
 }
 
 .instafeed-container{
-	background-color:#fff;
 	padding: 0;
 	@include clearfix;
 }
