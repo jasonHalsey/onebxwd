@@ -1398,24 +1398,18 @@ video {
 
 /* line 102, ../sass/_partials/_textures.scss */
 .texture {
-  height: 5em;
+  height: 100%;
   width: 100%;
 }
 /* line 108, ../sass/_partials/_textures.scss */
 .texture .texture-normal {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/grey.png"), -webkit-linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/grey.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
-  float: left;
-  height: 5em;
-  width: 50%;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/white_texture.png"), -webkit-linear-gradient(180deg, white, #e8e8e8), center no-repeat white scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/white_texture.png"), linear-gradient(180deg, white, #e8e8e8), center no-repeat white scroll;
 }
-/* line 116, ../sass/_partials/_textures.scss */
+/* line 113, ../sass/_partials/_textures.scss */
 .texture .texture-inverted {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/grey.png"), -webkit-linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/grey.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
-  float: left;
-  height: 5em;
-  width: 50%;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/white_texture.png"), -webkit-linear-gradient(180deg, white, #e8e8e8), center no-repeat white scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/white_texture.png"), linear-gradient(180deg, white, #e8e8e8), center no-repeat white scroll;
 }
 
 /* line 1, ../sass/_partials/_structure.scss */
@@ -1467,7 +1461,7 @@ div {
 /* line 33, ../sass/_partials/_structure.scss */
 .story-container {
   background-color: #fff;
-  padding: 2em;
+  padding: 0;
 }
 /* line 15, ../sass/bourbon/addons/_clearfix.scss */
 .story-container:after {
@@ -1504,7 +1498,7 @@ div {
 }
 /* line 64, ../sass/_partials/_structure.scss */
 .story-content p {
-  padding: 0% 5%;
+  padding: 0% 10%;
   font-size: 1.2em;
   text-align: center;
   line-height: 3.0em;

@@ -32,7 +32,7 @@ div{
 
 .story-container{
 	background-color:#fff;
-	padding: 2em;
+	padding: 0;
 	@include clearfix;
 }
 
@@ -62,7 +62,7 @@ div{
 	color:#333;
 	padding:1.5% 0 5%;
 	p{
-		padding: 0% 5%;
+		padding: 0% 10%;
 		font-size: 1.2em;
 		text-align:center;
 		line-height:3.0em;
