@@ -1589,3 +1589,253 @@ img#blvd_logo {
 img#blvd_logo:hover {
   opacity: 1.0;
 }
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+/* line 27, ../sass/screen.scss */
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-color: #000000;
+}
+
+/* line 35, ../sass/screen.scss */
+.no-js {
+  padding-top: 106px;
+}
+
+/* line 38, ../sass/screen.scss */
+h2 {
+  margin-top: 0;
+}
+
+/* line 41, ../sass/screen.scss */
+.loading {
+  background: url("../img/ico_loading.gif") no-repeat center center;
+}
+
+/* line 44, ../sass/screen.scss */
+section {
+  min-width: 960px;
+  opacity: 0;
+}
+
+/* line 48, ../sass/screen.scss */
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+/* line 55, ../sass/screen.scss */
+main {
+  overflow-x: hidden;
+}
+
+/* line 59, ../sass/screen.scss */
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Slide 1 */
+/* line 68, ../sass/screen.scss */
+#slide-1 .bcg {
+  background-image: url("../img/bcg_slide-1.jpg");
+}
+
+/* Slide 2 */
+/* line 71, ../sass/screen.scss */
+#slide-2 .bcg {
+  background: none;
+  background-color: #010101;
+  text-align: center;
+}
+
+/* Slide 3 */
+/* line 74, ../sass/screen.scss */
+#slide-3 .bcg {
+  background-image: url("../img/bcg_slide-3.jpg");
+}
+
+/* line 75, ../sass/screen.scss */
+#slide-3 .bcg2 {
+  background-image: none;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Slide 4 */
+/* line 78, ../sass/screen.scss */
+.curtainContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 79, ../sass/screen.scss */
+.curtainContainer .curtain {
+  width: 300%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 80, ../sass/screen.scss */
+.curtainContainer .copy {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 82, ../sass/screen.scss */
+#slide-4 .bcg {
+  background-image: url("../img/bcg_slide-4.jpg");
+}
+
+/* Slide 5 */
+/* line 85, ../sass/screen.scss */
+#slide-5 {
+  position: relative;
+}
+
+/* line 86, ../sass/screen.scss */
+#slide-5 .bcg {
+  background-image: url("../img/bcg_slide-5.jpg");
+}
+
+/* line 87, ../sass/screen.scss */
+#slide-5 .bcg2 {
+  background-image: url("../img/bcg_slide-5b.jpg");
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 88, ../sass/screen.scss */
+#slide-5 .bcg3 {
+  background: none;
+  background-color: #010101;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* line 90, ../sass/screen.scss */
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 99, ../sass/screen.scss */
+.hsContent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ebebeb;
+  padding: 0 8%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 110, ../sass/screen.scss */
+.hsContent h2,
+.copy h2 {
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+/* line 117, ../sass/screen.scss */
+.hsContent p {
+  width: 400px;
+  margin: 0 auto;
+  color: #b2b2b2;
+}
+
+/* line 122, ../sass/screen.scss */
+.hsContent a {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
+
+/* line 126, ../sass/screen.scss */
+.bgBlack {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 3px 10px;
+}
+
+/* Navigation */
+/* line 133, ../sass/screen.scss */
+#slideNav {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -80px;
+  z-index: 11;
+}
+
+/* line 141, ../sass/screen.scss */
+#slideNav ul {
+  list-style: none;
+  color: #000000;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* line 147, ../sass/screen.scss */
+#slideNav li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1px;
+}
+
+/* line 154, ../sass/screen.scss */
+.no-rgba #slideNav li {
+  background-color: #ffffff;
+}
+
+/* line 155, ../sass/screen.scss */
+#slideNav a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 164, ../sass/screen.scss */
+#slideNav a.disabled {
+  cursor: default;
+}
