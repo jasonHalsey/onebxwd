@@ -1360,12 +1360,13 @@ video {
 
 /* line 124, ../sass/_partials/_contact.scss */
 .contact-row {
+  padding: 2.0% 2.5% 2.5%;
   padding-bottom: 2.5%;
   padding-top: 2.0%;
   background-color: #fff;
 }
 
-/* line 130, ../sass/_partials/_contact.scss */
+/* line 131, ../sass/_partials/_contact.scss */
 .contact-banner img {
   width: 100%;
   height: auto;
@@ -1373,7 +1374,7 @@ video {
 }
 
 /* Outline Outward */
-/* line 136, ../sass/_partials/_contact.scss */
+/* line 137, ../sass/_partials/_contact.scss */
 .outline-outward {
   display: inline-block;
   position: relative;
