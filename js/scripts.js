@@ -73,12 +73,7 @@ $( document ).ready(function() {
             // console.log('done scrolling');
         }
     });
-<<<<<<< HEAD
 
-	//Add class of current to content-strip in viewport
-=======
-//Add class of current to content-strip in viewport
->>>>>>> c4f0ed2bd1922357bab7a023334790bd924c7fd8
 	$('section.content-stripe').inViewport(
 	    function(){$(this).addClass("current");},
 	    function(){$(this).removeClass("current");}
@@ -168,4 +163,6 @@ $(document).ready(function() {
     });
   });
 });
+
+
 

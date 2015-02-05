@@ -1559,8 +1559,8 @@ div {
 }
 /* line 103, ../sass/_partials/_structure.scss */
 .store-container img {
-  margin: 4% auto 0;
-  width: 50%;
+  margin: 8% auto 2%;
+  width: 38%;
   height: auto;
 }
 
@@ -1596,11 +1596,10 @@ div {
 
 /* line 125, ../sass/_partials/_structure.scss */
 img#blvd_logo {
-  opacity: 0.5;
-  width: 30%;
+  width: 50%;
   height: auto;
 }
-/* line 129, ../sass/_partials/_structure.scss */
+/* line 128, ../sass/_partials/_structure.scss */
 img#blvd_logo:hover {
   opacity: 1.0;
 }
