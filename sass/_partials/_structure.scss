@@ -1,9 +1,16 @@
+body{
+	background-color:#000;
+}
 div{
 	vertical-align:top!important;
 }
 #main{
 	width:100%;
-	clear:both;
+	padding-top:108px;
+	@include clearfix;
+}
+#main.sticky{
+	padding-top:68px;
 }
 
 .content-stripe{
@@ -24,14 +31,14 @@ div{
 }
 
 .story-container{
-	background-image:url(../images/6d.jpg);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding: 2em;
+	background-color:#fff;
+	padding: 0;
+	@include clearfix;
+}
+
+.privacy-container{
+	background-color:#fff;
+	padding: 4.0em;
 	@include clearfix;
 }
 
@@ -57,19 +64,68 @@ div{
 	padding:5%;
 }
 
+.story-content{
+	color:#333;
+	padding:1.5% 0 5%;
+	p{
+		padding: 0% 10%;
+		font-size: 1.2em;
+		text-align:center;
+		line-height:3.0em;
+	}
+	h1{
+		color:#333;
+		margin: 2% 0;
+		text-align:center;
+		font-size: 2.5em;
+	}
+}
+
+.terms-content{
+	color:#333;
+	padding:1.5% 0 5%;
+	p{
+		padding: 0% 5%;
+		font-size: 0.95em;
+		text-align:left;
+		line-height:1.5em;
+	}
+	h1{
+		color:#333;
+		margin: 2% 0;
+		text-align:center;
+		font-size: 1.5em;
+	}
+}
+
+.store-container{
+	text-align:center;
+	img{
+		margin: 16% auto;
+		width:38%;
+		height:auto;
+	}
+}
+
 #instafeed{
 	@include span-columns(12);
-	margin-top:2.0em;
+	margin-top:0;
+	@include clearfix;
+}
+
+.insta-content{
+	
 }
 
 .instafeed-container{
-	background-image:url(../images/4b.jpg);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding: 2em;
+	padding: 0;
 	@include clearfix;
+}
+
+img#blvd_logo{
+	width:40%;
+	height: auto;
+	&:hover{
+		opacity: 1.0;
+	}
 }

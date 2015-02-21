@@ -33,7 +33,7 @@ video {
 .video-trigger {
   z-index: 5;
   position: absolute;
-  background: #222;
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   color: white;
   text-decoration: none;
@@ -49,6 +49,9 @@ video {
   -webkit-transition: background .3s;
   -moz-transition: background .3s;
   transition: background .3s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .video-trigger:hover {

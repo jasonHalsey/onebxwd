@@ -1,0 +1,139 @@
+
+@import "options";
+@import "mixins";
+@import "hacks";
+
+
+.contact-mod{
+	width:100%;
+	@include clearfix;
+	position:relative;
+	.contact_path{
+		@include span-columns(2);	
+		text-align:center;
+		padding-top: 2.5%;
+		.icon_contact{
+			width:100px;
+			height:100px;
+			cursor: pointer;
+			border-radius:50px;
+			font-size:20px;
+			color:#fff;
+			line-height:100px;
+			text-align:center;
+			background:#bababa;
+			margin: 2% auto 4%;
+			span.sales_icon{
+				img{padding-top:23%;}
+			}
+			span.pr_icon{
+				img{padding-top:20%;}
+			}
+			span.phone_icon{
+				img{padding-top:25%;}
+			}
+			span.email_icon{
+				img{padding-top:35%;}
+			}
+		}
+		@media all and (max-width: 1000px) {
+			@include span-columns(12);
+			text-align:center;
+			.icon_contact{
+				width:50px;
+				height:50px;
+				cursor: pointer;
+				border-radius:25px;
+				font-size:18px;
+				color:#fff;
+				line-height:50px;
+				text-align:center;
+				background:#bababa;
+				margin: 2% auto 4%;
+				span.sales_icon{
+					img{
+						width:50%;
+						height:auto;
+						padding-top:23%;
+					}
+				}
+				span.pr_icon{
+					img{
+						width:50%;
+						height:auto;
+						padding-top:20%;}
+				}
+				span.phone_icon{
+					img{
+						width:50%;
+						height:auto;
+						padding-top:25%;}
+				}
+				span.email_icon{
+					img{
+						width:50%;
+						height:auto;
+						padding-top:35%;}
+				}
+			}	
+		}
+	}
+	.center_path{
+		@include span-columns(4);
+		text-align:center;
+		position: relative;
+		.icon_contact{
+			width:180px;
+			height:180px;
+			cursor: pointer;
+			border-radius:50%;
+			font-size:20px;
+			color:#fff;
+			line-height:180px;
+			text-align:center;
+			background:#bababa;
+			margin: 2% auto 4%;
+			span.blvd_icon{
+				img{padding-top:38%;}
+			}
+		}
+		@media all and (max-width: 1000px) {
+			@include span-columns(12);
+			text-align:center;
+			.icon_contact{
+				width:50px;
+				height:50px;
+				border-radius:25px;
+				font-size:18px;
+				color:#fff;
+				line-height:50px;
+				text-align:center;
+				background:#bababa;
+				margin: 2% auto 4%;
+				span.blvd_icon{
+					img{
+						padding-top:20%;
+						width:60%;
+						height:auto;
+					}
+				}
+			}	
+		}
+	}
+}
+.contact-row{
+	padding: 2.0% 2.5% 2.5%;
+	padding-bottom: 2.5%;
+	padding-top: 2.0%;
+	background-color:#fff;
+}
+.contact-banner{
+	img{width:100%;height:auto;margin-bottom:-10px;}
+}
+
+
+//Hover Effecst
+@import "effects/outline-outward";
+.outline-outward {
+	@include outline-outward();
+}

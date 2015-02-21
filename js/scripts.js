@@ -38,35 +38,42 @@ function removeNext() {
 
 $( window ).scroll(function() {
 	
-	if ($(this).scrollTop() > 900) {
+	if ($(this).scrollTop() > 400) {
     	$('section.content-stripe:first').removeClass("current");
     }else if($(this).scrollTop() < 5) {
     	$('section.content-stripe:first').addClass("current")
     }
-	removePrev();
-	removeNext();
 });
 
 
 
 
 $( document ).ready(function() {
-	removePrev();
-	removeNext();
-	
+
+	//look book slider init
+	$('.lookbook').bxSlider({
+	  auto: true,
+	  autoControls: false,
+	  mode: 'fade'
+	});
+
 
 	$('.single-page-nav').singlePageNav({
-       // offset: $('.single-page-nav').outerHeight(),
+       
+
+       offset: $('.single-page-nav').outerHeight(),
+       
+
         filter: ':not(.external)',
         updateHash: false,
         beforeStart: function() {
-            console.log('begin scrolling');
+            // console.log('begin scrolling');
         },
         onComplete: function() {
-            console.log('done scrolling');
+            // console.log('done scrolling');
         }
     });
-//Add class of current to content-strip in viewport
+
 	$('section.content-stripe').inViewport(
 	    function(){$(this).addClass("current");},
 	    function(){$(this).removeClass("current");}
@@ -121,5 +128,41 @@ $( document ).ready(function() {
 
 $(window).resize(function() {
 	contentStripeAdjust();
-
 });
+
+//sticky navigation
+$(window).scroll(function() {
+		
+	if (Modernizr.mq('only screen and (min-width: 1200px)')) {
+	    
+	    if ($(this).scrollTop() > 1)  {  
+        $('header').addClass("sticky");
+        $('#main').addClass("sticky");
+        $('li.nav-link > a').addClass("sticky");
+        console.log('Its\'s sticky');
+	    }
+	    else{
+	        $('header').removeClass("sticky");
+	        $('#main').removeClass("sticky");
+	        $('li.nav-link > a').removeClass("sticky");
+	    }
+	}
+});
+
+//navigation functionality
+$(document).ready(function() {
+  var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
+  $('#js-centered-navigation-menu').removeClass("show");
+  
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-centered-navigation-menu').slideToggle(function(){
+      if($('#js-centered-navigation-menu').is(':hidden')) {
+        $('#js-centered-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+
+
