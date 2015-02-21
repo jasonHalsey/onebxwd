@@ -1559,7 +1559,7 @@ div {
 }
 /* line 103, ../sass/_partials/_structure.scss */
 .store-container img {
-  margin: 8% auto 2%;
+  margin: 16% auto;
   width: 38%;
   height: auto;
 }
