@@ -1,14 +1,14 @@
 .instagram_image{
 	display:block;
 	float:left;
-	width:100%;
-	max-width:250px;
+	width:12.5%;
+	height:auto;
 	padding:0;
-	margin:0;
+	margin-right:0!important;
 	img{
 		width:100%;
 		height:auto;
-		max-width:250px;
+		
 		float:left;
 		&:hover{
 			opacity: 0.4;

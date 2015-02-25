@@ -954,16 +954,15 @@ video {
 .instagram_image {
   display: block;
   float: left;
-  width: 100%;
-  max-width: 250px;
+  width: 12.5%;
+  height: auto;
   padding: 0;
-  margin: 0;
+  margin-right: 0 !important;
 }
 /* line 8, ../sass/_partials/_instafeed.scss */
 .instagram_image img {
   width: 100%;
   height: auto;
-  max-width: 250px;
   float: left;
 }
 /* line 13, ../sass/_partials/_instafeed.scss */
