@@ -31,7 +31,18 @@ div{
 }
 
 .story-container{
-	background-color:#fff;
+	background-image: url("../images/cement.jpg");
+	height: 100%;
+	width: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display:table;
+	overflow: hidden;
 	padding: 0;
 	@include clearfix;
 }

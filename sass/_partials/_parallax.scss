@@ -1,0 +1,30 @@
+section.module.parallax {
+  height: 600px;
+  width:100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:table;
+  overflow: hidden;
+  @include media($phone){
+    height: 300px;
+    width:100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  @include media($mobile){
+    height: 300px;
+  }
+}
+section.module.parallax-1 {
+  background-image: url("images/cement.jpg");
+}

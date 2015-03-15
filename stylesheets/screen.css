@@ -529,6 +529,12 @@ h1.lookbook_title {
   opacity: 0.33;
 }
 
+/* line 20, ../sass/_partials/_typography.scss */
+.story-title {
+  font-family: "droid-sans-mono", sans-serif;
+  font-weight: 400;
+}
+
 /* line 1, ../sass/_partials/_navigation.scss */
 #page_navigation {
   position: fixed;
@@ -1433,6 +1439,46 @@ video {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/white_texture.png"), linear-gradient(180deg, white, #cccccc), center no-repeat white scroll;
 }
 
+/* line 1, ../sass/_partials/_parallax.scss */
+section.module.parallax {
+  height: 600px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  overflow: hidden;
+}
+@media screen and (max-width: 468px) {
+  /* line 1, ../sass/_partials/_parallax.scss */
+  section.module.parallax {
+    height: 300px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/_partials/_parallax.scss */
+  section.module.parallax {
+    height: 300px;
+  }
+}
+
+/* line 28, ../sass/_partials/_parallax.scss */
+section.module.parallax-1 {
+  background-image: url("images/cement.jpg");
+}
+
 /* line 1, ../sass/_partials/_structure.scss */
 body {
   background-color: #000;
@@ -1481,7 +1527,18 @@ div {
 
 /* line 33, ../sass/_partials/_structure.scss */
 .story-container {
-  background-color: #fff;
+  background-image: url("../images/cement.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  overflow: hidden;
   padding: 0;
 }
 /* line 15, ../sass/bourbon/addons/_clearfix.scss */
@@ -1491,7 +1548,7 @@ div {
   clear: both;
 }
 
-/* line 39, ../sass/_partials/_structure.scss */
+/* line 50, ../sass/_partials/_structure.scss */
 .privacy-container {
   background-color: #fff;
   padding: 4.0em;
@@ -1503,7 +1560,7 @@ div {
   clear: both;
 }
 
-/* line 49, ../sass/_partials/_structure.scss */
+/* line 60, ../sass/_partials/_structure.scss */
 .bgimg {
   margin: 0;
   padding: 0;
@@ -1516,7 +1573,7 @@ div {
   z-index: 1;
 }
 
-/* line 60, ../sass/_partials/_structure.scss */
+/* line 71, ../sass/_partials/_structure.scss */
 .stripe-content {
   position: absolute;
   z-index: 2;
@@ -1524,19 +1581,19 @@ div {
   padding: 5%;
 }
 
-/* line 67, ../sass/_partials/_structure.scss */
+/* line 78, ../sass/_partials/_structure.scss */
 .story-content {
   color: #333;
   padding: 1.5% 0 5%;
 }
-/* line 70, ../sass/_partials/_structure.scss */
+/* line 81, ../sass/_partials/_structure.scss */
 .story-content p {
   padding: 0% 10%;
   font-size: 1.2em;
   text-align: center;
   line-height: 3.0em;
 }
-/* line 76, ../sass/_partials/_structure.scss */
+/* line 87, ../sass/_partials/_structure.scss */
 .story-content h1 {
   color: #333;
   margin: 2% 0;
@@ -1544,19 +1601,19 @@ div {
   font-size: 2.5em;
 }
 
-/* line 84, ../sass/_partials/_structure.scss */
+/* line 95, ../sass/_partials/_structure.scss */
 .terms-content {
   color: #333;
   padding: 1.5% 0 5%;
 }
-/* line 87, ../sass/_partials/_structure.scss */
+/* line 98, ../sass/_partials/_structure.scss */
 .terms-content p {
   padding: 0% 5%;
   font-size: 0.95em;
   text-align: left;
   line-height: 1.5em;
 }
-/* line 93, ../sass/_partials/_structure.scss */
+/* line 104, ../sass/_partials/_structure.scss */
 .terms-content h1 {
   color: #333;
   margin: 2% 0;
@@ -1564,18 +1621,18 @@ div {
   font-size: 1.5em;
 }
 
-/* line 101, ../sass/_partials/_structure.scss */
+/* line 112, ../sass/_partials/_structure.scss */
 .store-container {
   text-align: center;
 }
-/* line 103, ../sass/_partials/_structure.scss */
+/* line 114, ../sass/_partials/_structure.scss */
 .store-container img {
   margin: 16% auto;
   width: 38%;
   height: auto;
 }
 
-/* line 110, ../sass/_partials/_structure.scss */
+/* line 121, ../sass/_partials/_structure.scss */
 #instafeed {
   float: left;
   display: block;
@@ -1594,7 +1651,7 @@ div {
   clear: both;
 }
 
-/* line 120, ../sass/_partials/_structure.scss */
+/* line 131, ../sass/_partials/_structure.scss */
 .instafeed-container {
   padding: 0;
 }
@@ -1605,12 +1662,12 @@ div {
   clear: both;
 }
 
-/* line 125, ../sass/_partials/_structure.scss */
+/* line 136, ../sass/_partials/_structure.scss */
 img#blvd_logo {
   width: 40%;
   height: auto;
 }
-/* line 128, ../sass/_partials/_structure.scss */
+/* line 139, ../sass/_partials/_structure.scss */
 img#blvd_logo:hover {
   opacity: 1.0;
 }
